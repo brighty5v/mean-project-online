@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<h4>hi</h4>
+{{# each products}}
+<div class="card-deck">
+    {{# each this}}
+  <div class="card">
+    <img src="{{this.imagePath}}" class="card-img-top" alt="..">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">{{this.description}}.</p>
+      <p class="card-text"><small class="text-muted">{{this.price}} Rs/-</small></p>
+    </div>
+  </div>
+  {{/each}}
+  </div>
+   {{/each}}
